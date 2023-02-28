@@ -52,3 +52,7 @@ if twitter:
     html = '<img src onerror="{}">'.format(js)
     div = Div(text=html)
     st.bokeh_chart(div)
+   
+url = "https://github.com/hymarodev"
+st.write("Github [link](%s)" % url)
+st.markdown("Github [link](%s)" % url)
