@@ -1,4 +1,3 @@
-from bokeh.models.widgets import Div
 import streamlit as st
 
 st.set_page_config(
@@ -38,21 +37,11 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.header("Check my social medias below:")
 
-github = st.button("💻️ Github")
-twitter = st.button("💬 Twitter")
 
-if github:
-    js = "window.open('https://github.com/hymarodev')"  # New tab or window
-    html = '<img src onerror="{}">'.format(js)
-    div = Div(text=html)
-    st.bokeh_chart(div)
-
-if twitter:
-    js = "window.open('https://twitter.com/amoxerecax')"  # New tab or window
-    html = '<img src onerror="{}">'.format(js)
-    div = Div(text=html)
-    st.bokeh_chart(div)
-   
 url = "https://github.com/hymarodev"
-st.write("Github [link](%s)" % url)
-st.markdown("Github [link](%s)" % url)
+st.write(" 💻️ Github [link](%s)" % url)
+st.markdown("💻️ Github [link](%s)" % url)
+
+url2 = "https://twitter.com/amoxerecax"
+st.write("💬 Twitter [link](%s)" % url2)
+st.markdown("💬 Twitter [link](%s)" % url2)
