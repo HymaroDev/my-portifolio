@@ -40,8 +40,6 @@ st.header("Check my social medias below:")
 
 url = "https://github.com/hymarodev"
 st.write(" 💻️ Github [link](%s)" % url)
-st.markdown("💻️ Github [link](%s)" % url)
 
 url2 = "https://twitter.com/amoxerecax"
 st.write("💬 Twitter [link](%s)" % url2)
-st.markdown("💬 Twitter [link](%s)" % url2)
